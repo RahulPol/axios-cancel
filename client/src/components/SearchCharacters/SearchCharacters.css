@@ -1,0 +1,26 @@
+.search-wrapper {
+  margin-top: 30px;
+}
+
+.character-search-input {
+  background-color: transparent;
+  border: 0px;
+  box-shadow: none;
+  cursor: inherit;
+  outline: none;
+  padding: 0px;
+  width: 80%;
+  box-sizing: content-box;
+  font-size: 30px;
+  color: var(--fontColorPrimary);
+}
+
+.response-entries table {
+  margin-top: 20px;
+  border: 1px solid var(--fontColorHighlight);
+}
+
+.response-entries table td,
+th {
+  padding: 20px;
+}

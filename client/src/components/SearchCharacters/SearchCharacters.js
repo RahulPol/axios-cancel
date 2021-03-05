@@ -23,6 +23,8 @@ const SearchCharacters = () => {
     const fetchData = async () => {
       try {
         if (searchQuery === "") {
+          performance.clearResourceTimings();
+          setResponseEntries([]);
           return;
         }
         const response = await axios.get(

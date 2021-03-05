@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "\"npm run heroku-prebuild\" && npm start",
+    "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 server.js",
+    "heroku-prebuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
